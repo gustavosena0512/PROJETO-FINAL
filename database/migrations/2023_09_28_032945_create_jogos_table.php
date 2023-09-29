@@ -16,9 +16,11 @@ return new class extends Migration
             $table->timestamps();
             $table->string('titulo');
             $table->string('imagem');
-            $table->date('data_lançamento');
             $table->string('trailer_youtube');
             $table->string('link_jogo');
+            $table->text('descricao');
+            $table->string('tags');
+
         });
     }
 
